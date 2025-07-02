@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D 우주 시뮬레이션</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 3D 캔버스가 그려질 영역 -->
+  <canvas id="space"></canvas>
+
+  <!-- UI: 현재 시각 + 명령어 입력 -->
+  <div id="hud">
+    <span id="clock">--:--:--</span>
+    <form id="commandForm">
+      <input
+        id="commandInput"
+        type="text"
+        autocomplete="off"
+        placeholder="명령어 예) goto earth"
+      />
+    </form>
+  </div>
+
+  <!-- Three.js & 카메라 이동용 GSAP 로더 (CDN) -->
+  <script type="module" src="main.js"></script>
+</body>
+</html>
