@@ -1,0 +1,52 @@
+/* 전체 화면을 3D 캔버스로 채움 */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+  font-family: "Pretendard", sans-serif;
+}
+
+#space {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* HUD (시계 + 입력창) */
+#hud {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #ffffff;
+  z-index: 10;
+}
+
+#clock {
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+}
+
+#commandForm {
+  display: flex;
+}
+
+#commandInput {
+  border: 1px solid #ffffff55;
+  background: #00000088;
+  color: #fff;
+  padding: 6px 10px;
+  width: 180px;
+  outline: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+#commandInput::placeholder {
+  color: #ffffff66;
+}
